@@ -120,11 +120,11 @@ export default function HomePage() {
             <tr>
               <td className="news-date">Jul 2026</td>
               <td>
-                Started my summer research internship at UC Davis, working with{" "}
+                Started my research internship at UC Davis, working with{" "}
                 <a href="https://dongyu.tech/" target="_blank" rel="noreferrer">
                   Prof. Dongyu Liu
                 </a>
-                .
+                . Hoping to do some cool work this summer!
               </td>
             </tr>
             <tr>
@@ -184,7 +184,7 @@ export default function HomePage() {
             </div>
             <div className="edu-body">
               <div className="edu-inst">University of California, Davis</div>
-              <div className="edu-degree">Summer Research</div>
+              <div className="edu-degree">Research Intern (Onsite)</div>
               <div className="edu-meta">
                 <span>Jul &ndash; Aug 2026</span>
                 <span>
