@@ -109,11 +109,22 @@ export default function HomePage() {
             <tr>
               <td className="news-date">Jul 2026</td>
               <td>
-                Two papers received conditional acceptance to{" "}
+                One first-author paper and one fourth-author paper received conditional
+                acceptance to{" "}
                 <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
                   ACM UIST 2026
+                </a>{" "}
+                (acceptance rate: 20.1%). Grateful to my collaborators!
+              </td>
+            </tr>
+            <tr>
+              <td className="news-date">Jul 2026</td>
+              <td>
+                Started my summer research internship at UC Davis, working with{" "}
+                <a href="https://dongyu.tech/" target="_blank" rel="noreferrer">
+                  Prof. Dongyu Liu
                 </a>
-                . Grateful to my collaborators!
+                .
               </td>
             </tr>
             <tr>
