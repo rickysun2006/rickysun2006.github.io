@@ -316,39 +316,35 @@ a:hover {
 }
 
 /* ── News ───────────────────────────────────────────── */
-.news-table {
-  width: 100%;
-  border-collapse: collapse;
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 1.25rem;
+  align-items: baseline;
+  padding: 0.42rem 0;
   font-size: 0.9rem;
+  transition: transform 0.15s;
 }
 
-.news-table tr {
-  transition: background-color 0.15s;
-}
-
-.news-table tr:hover td {
-  background-color: var(--accent-soft);
-}
-
-.news-table tr + tr td {
-  border-top: 1px solid var(--border);
-}
-
-.news-table td {
-  padding: 0.55rem 0.4rem;
-  vertical-align: top;
-}
-
-.news-table td:first-child {
-  padding-left: 0;
+.news-item:hover {
+  transform: translateY(-1px);
 }
 
 .news-date {
   white-space: nowrap;
   color: var(--muted);
-  padding-right: 1.5rem;
-  min-width: 6.5rem;
+  font-size: 0.84rem;
   font-variant-numeric: tabular-nums;
+}
+
+.news-content {
+  line-height: 1.55;
 }
 
 /* ── Education ──────────────────────────────────────── */
@@ -367,15 +363,29 @@ a:hover {
   gap: 0.85rem;
   align-items: center;
   padding: 0.7rem 1rem;
-  border: 1px solid var(--border);
+  background: #ffffff;
   border-radius: 10px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.04),
+    0 6px 20px rgba(0, 0, 0, 0.05);
   font-size: 0.9rem;
-  transition: background-color 0.15s, border-color 0.15s;
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .edu-item:hover {
-  background-color: var(--accent-soft);
-  border-color: color-mix(in srgb, var(--accent) 30%, var(--border));
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.06),
+    0 10px 28px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .edu-item {
+    background: #1a1a18;
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.2),
+      0 6px 20px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .edu-logo-wrap {
@@ -466,10 +476,14 @@ a:hover {
 
 /* ── Publications ───────────────────────────────────── */
 .pub-legend {
-  margin: -0.35rem 0 0.85rem;
+  margin: 0.55rem 0 1.2rem;
   color: var(--muted);
   font-size: 0.78rem;
-  line-height: 1.4;
+  line-height: 1.5;
+}
+
+#publications h2 {
+  margin-bottom: 0.85rem;
 }
 
 .pub-list {
@@ -668,6 +682,12 @@ a:hover {
     grid-template-columns: 2.75rem 1fr;
     gap: 0.75rem;
     padding: 0.65rem 0.85rem;
+  }
+
+  .news-item {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+    padding: 0.45rem 0;
   }
 
   .edu-logo-wrap {

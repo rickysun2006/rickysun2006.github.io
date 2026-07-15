@@ -108,51 +108,49 @@ export default function HomePage() {
       {/* ── News ────────────────────────────────────── */}
       <section id="news">
         <h2>News</h2>
-        <table className="news-table">
-          <tbody>
-            <tr>
-              <td className="news-date">Jul 2026</td>
-              <td>
-                One first-author paper and one fourth-author paper received conditional
-                acceptance to{" "}
-                <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
-                  ACM UIST 2026
-                </a>{" "}
-                (acceptance rate: 20.1%). Grateful to my collaborators!
-              </td>
-            </tr>
-            <tr>
-              <td className="news-date">Jul 2026</td>
-              <td>
-                Started my research internship at UC Davis, working with{" "}
-                <a href="https://dongyu.tech/" target="_blank" rel="noreferrer">
-                  Prof. Dongyu Liu
-                </a>
-                . Hoping to do some cool work this summer!
-              </td>
-            </tr>
-            <tr>
-              <td className="news-date">Apr 2026</td>
-              <td>
-                I&rsquo;ll be attending{" "}
-                <a href="https://chi2026.acm.org/" target="_blank" rel="noreferrer">
-                  ACM CHI 2026
-                </a>{" "}
-                in Barcelona. Come find me and say hi!
-              </td>
-            </tr>
-            <tr>
-              <td className="news-date">Mar 2026</td>
-              <td>
-                4 papers submitted to{" "}
-                <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
-                  ACM UIST 2026
-                </a>
-                . Good luck to us 🤞
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <ul className="news-list">
+          <li className="news-item">
+            <span className="news-date">Jul 2026</span>
+            <div className="news-content">
+              One first-author paper and one fourth-author paper received conditional
+              acceptance to{" "}
+              <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
+                ACM UIST 2026
+              </a>{" "}
+              (acceptance rate: 20.1%). Grateful to my collaborators!
+            </div>
+          </li>
+          <li className="news-item">
+            <span className="news-date">Jul 2026</span>
+            <div className="news-content">
+              Started my research internship at UC Davis, working with{" "}
+              <a href="https://dongyu.tech/" target="_blank" rel="noreferrer">
+                Prof. Dongyu Liu
+              </a>
+              . Hoping to do some cool work this summer!
+            </div>
+          </li>
+          <li className="news-item">
+            <span className="news-date">Apr 2026</span>
+            <div className="news-content">
+              I&rsquo;ll be attending{" "}
+              <a href="https://chi2026.acm.org/" target="_blank" rel="noreferrer">
+                ACM CHI 2026
+              </a>{" "}
+              in Barcelona. Come find me and say hi!
+            </div>
+          </li>
+          <li className="news-item">
+            <span className="news-date">Mar 2026</span>
+            <div className="news-content">
+              4 papers submitted to{" "}
+              <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
+                ACM UIST 2026
+              </a>
+              . Good luck to us 🤞
+            </div>
+          </li>
+        </ul>
       </section>
 
       {/* ── Publications ────────────────────────────── */}
@@ -191,7 +189,7 @@ export default function HomePage() {
                 <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
                   UIST 2026
                 </a>
-                ), 2026, to appear.
+                ), 2026, conditionally accepted, to appear.
               </div>
             </div>
           </li>
@@ -229,7 +227,7 @@ export default function HomePage() {
                 <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
                   UIST 2026
                 </a>
-                ), 2026, to appear.
+                ), 2026, conditionally accepted, to appear.
               </div>
             </div>
           </li>
