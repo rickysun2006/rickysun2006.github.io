@@ -145,8 +145,17 @@ a:hover {
 
 .site-nav .nav-links {
   display: flex;
-  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.35rem 1.1rem;
   font-size: 0.85rem;
+}
+
+#intro,
+#news,
+#publications,
+#education {
+  scroll-margin-top: 1.5rem;
 }
 
 .site-nav .nav-links a {
@@ -455,6 +464,162 @@ a:hover {
   opacity: 1;
 }
 
+/* ── Publications ───────────────────────────────────── */
+.pub-legend {
+  margin: -0.35rem 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.pub-item {
+  display: grid;
+  grid-template-columns: minmax(0, 42%) 1fr;
+  gap: 1.75rem;
+  align-items: center;
+  padding: 1.35rem 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.04),
+    0 6px 20px rgba(0, 0, 0, 0.05);
+  font-size: 0.9rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pub-item {
+    background: #1a1a18;
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.2),
+      0 6px 20px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.pub-item:hover {
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.06),
+    0 10px 28px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.pub-visual {
+  position: relative;
+  min-width: 0;
+}
+
+.pub-badge {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  z-index: 2;
+  padding: 0.3rem 0.6rem;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  border-radius: 3px;
+}
+
+.pub-thumb {
+  width: 100%;
+  height: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 0.5rem;
+}
+
+.pub-thumb img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.pub-body {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 0.15rem 0;
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.pub-authors {
+  color: var(--text);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.pub-corresponding {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.pub-authors a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.pub-authors a:hover {
+  color: var(--accent);
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.pub-corresponding a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.pub-corresponding a:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.pub-venue {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.pub-venue a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.pub-venue a:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
 /* ── Footer ─────────────────────────────────────────── */
 .site-footer {
   margin-top: 3rem;
@@ -467,6 +632,17 @@ a:hover {
 
 /* ── Mobile ─────────────────────────────────────────── */
 @media (max-width: 680px) {
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .site-nav .nav-links {
+    justify-content: flex-start;
+    gap: 0.5rem 1rem;
+  }
+
   .intro {
     grid-template-columns: 1fr;
     gap: 1.75rem;
@@ -497,6 +673,21 @@ a:hover {
   .edu-logo-wrap {
     width: 2.75rem;
     height: 2.75rem;
+  }
+
+  .pub-item {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+    padding: 1.1rem 1.15rem;
+    align-items: start;
+  }
+
+  .pub-thumb {
+    height: 152px;
+  }
+
+  .pub-body {
+    padding: 0;
   }
 }
 

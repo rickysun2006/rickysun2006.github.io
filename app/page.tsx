@@ -6,12 +6,16 @@ export default function HomePage() {
       <nav className="site-nav">
         <a href="/" className="nav-name">Ruqi Sun</a>
         <div className="nav-links">
+          <a href="#intro">Intro</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#education">Education</a>
           <a href="/cv.pdf" target="_blank" rel="noreferrer">CV ↗</a>
         </div>
       </nav>
 
       {/* ── Intro ───────────────────────────────────── */}
-      <div className="intro">
+      <div id="intro" className="intro">
         <div className="intro-main">
           <h1>
             Hi, this is <span className="intro-accent">Ruqi Sun</span>.
@@ -84,7 +88,7 @@ export default function HomePage() {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/ruqi-%EF%BC%88ricky%EF%BC%89-sun-13161a307/"
+                  href="https://www.linkedin.com/in/ruqi-sun-13161a307/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -149,6 +153,87 @@ export default function HomePage() {
             </tr>
           </tbody>
         </table>
+      </section>
+
+      {/* ── Publications ────────────────────────────── */}
+      <section id="publications">
+        <h2>Publications</h2>
+        <p className="pub-legend">
+          <strong>Bold</strong> = myself &nbsp;&middot;&nbsp;{" "}
+          <span className="pub-corresponding">Underline</span> = corresponding author
+        </p>
+        <ul className="pub-list">
+          <li className="pub-item">
+            <div className="pub-visual">
+              <span className="pub-badge">UIST 2026</span>
+              <div className="pub-thumb">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/veriforge.png" alt="VeriForge teaser figure" />
+              </div>
+            </div>
+            <div className="pub-body">
+              <div className="pub-title">
+                VeriForge: Mitigating Latent Knowledge Gaps in Narrative Drafting via
+                Mixed-Initiative Scaffolding
+              </div>
+              <div className="pub-authors">
+                <strong>Ruqi Sun</strong>, Jiaping Li, Wenhui Tao, Ximing Zheng, Yuefeng Tan,
+                Jiahao Wei,{" "}
+                <span className="pub-corresponding">
+                  <a href="https://cse.sustech.edu.cn/faculty/~mayx/" target="_blank" rel="noreferrer">
+                    Yuxin Ma
+                  </a>
+                </span>
+              </div>
+              <div className="pub-venue">
+                Proceedings of the 39th Annual ACM Symposium on User Interface Software and
+                Technology (
+                <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
+                  UIST 2026
+                </a>
+                ), 2026, to appear.
+              </div>
+            </div>
+          </li>
+          <li className="pub-item">
+            <div className="pub-visual">
+              <span className="pub-badge">UIST 2026</span>
+              <div className="pub-thumb">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/simusation.png" alt="SiMUSation teaser figure" />
+              </div>
+            </div>
+            <div className="pub-body">
+              <div className="pub-title">
+                SiMUSation: An Interactive Visitor Experience Simulation Framework to Support
+                Museum Exhibition Design
+              </div>
+              <div className="pub-authors">
+                <a href="https://wanghchen.github.io/" target="_blank" rel="noreferrer">
+                  Huanchen Wang
+                </a>
+                , Qiuming Chen, Zhonghao Ji, <strong>Ruqi Sun</strong>,{" "}
+                <a href="https://www.cs.cityu.edu.hk/~zhichalu/" target="_blank" rel="noreferrer">
+                  Zhichao Lu
+                </a>
+                ,{" "}
+                <span className="pub-corresponding">
+                  <a href="https://cse.sustech.edu.cn/faculty/~mayx/" target="_blank" rel="noreferrer">
+                    Yuxin Ma
+                  </a>
+                </span>
+              </div>
+              <div className="pub-venue">
+                Proceedings of the 39th Annual ACM Symposium on User Interface Software and
+                Technology (
+                <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
+                  UIST 2026
+                </a>
+                ), 2026, to appear.
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
 
       {/* ── Education ───────────────────────────────── */}
