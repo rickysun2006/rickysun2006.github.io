@@ -1,3 +1,5 @@
+import { NewsSection } from "./news-section";
+
 export default function HomePage() {
   return (
     <div className="page-wrap">
@@ -37,14 +39,9 @@ export default function HomePage() {
           </p>
 
           <blockquote className="intro-quote">
-            I care about the human consequences of AI: who it serves, how it is used, and
-            what kinds of futures it enables.
+            I build AI that does more than produce answers: it gives people the power to
+            understand, challenge, and change how those answers are made.
           </blockquote>
-
-          <p>
-            Outside the lab, I enjoy musical theatre and reading. My two cats are back home
-            in Changchun, keeping my family company.
-          </p>
 
           <div className="intro-interests">
             <p>My research interests include:</p>
@@ -105,60 +102,15 @@ export default function HomePage() {
         </aside>
       </div>
 
-      {/* ── News ────────────────────────────────────── */}
-      <section id="news">
-        <h2>News</h2>
-        <ul className="news-list">
-          <li className="news-item">
-            <span className="news-date">Jul 2026</span>
-            <div className="news-content">
-              One first-author paper and one fourth-author paper received conditional
-              acceptance to{" "}
-              <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
-                ACM UIST 2026
-              </a>{" "}
-              (acceptance rate: 20.1%). Grateful to my collaborators!
-            </div>
-          </li>
-          <li className="news-item">
-            <span className="news-date">Jul 2026</span>
-            <div className="news-content">
-              Started my research internship at UC Davis, working with{" "}
-              <a href="https://dongyu.tech/" target="_blank" rel="noreferrer">
-                Prof. Dongyu Liu
-              </a>
-              . Hoping to do some cool work this summer!
-            </div>
-          </li>
-          <li className="news-item">
-            <span className="news-date">Apr 2026</span>
-            <div className="news-content">
-              I&rsquo;ll be attending{" "}
-              <a href="https://chi2026.acm.org/" target="_blank" rel="noreferrer">
-                ACM CHI 2026
-              </a>{" "}
-              in Barcelona. Come find me and say hi!
-            </div>
-          </li>
-          <li className="news-item">
-            <span className="news-date">Mar 2026</span>
-            <div className="news-content">
-              4 papers submitted to{" "}
-              <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
-                ACM UIST 2026
-              </a>
-              . Good luck to us 🤞
-            </div>
-          </li>
-        </ul>
-      </section>
+      <NewsSection />
 
       {/* ── Publications ────────────────────────────── */}
       <section id="publications">
         <h2>Publications</h2>
         <p className="pub-legend">
           <strong>Bold</strong> = myself &nbsp;&middot;&nbsp;{" "}
-          <span className="pub-corresponding">Underline</span> = corresponding author
+          <sup className="pub-corresponding-mark">†</sup> = corresponding author &nbsp;&middot;&nbsp;{" "}
+          <span className="pub-author-link pub-author-link--sample">Name</span> = homepage
         </p>
         <ul className="pub-list">
           <li className="pub-item">
@@ -175,13 +127,27 @@ export default function HomePage() {
                 Mixed-Initiative Scaffolding
               </div>
               <div className="pub-authors">
-                <strong>Ruqi Sun</strong>, Jiaping Li, Wenhui Tao, Ximing Zheng, Yuefeng Tan,
-                Jiahao Wei,{" "}
-                <span className="pub-corresponding">
-                  <a href="https://cse.sustech.edu.cn/faculty/~mayx/" target="_blank" rel="noreferrer">
-                    Yuxin Ma
-                  </a>
-                </span>
+                <strong>Ruqi Sun</strong>,{" "}
+                <a
+                  href="https://scholar.google.com/citations?user=lFjvfd4AAAAJ&hl=en"
+                  className="pub-author-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Jiaping Li
+                </a>
+                , Wenhui Tao, Ximing Zheng, Yuefeng Tan, Jiahao Wei,{" "}
+                <a
+                  href="https://cse.sustech.edu.cn/faculty/~mayx/"
+                  className="pub-author-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Yuxin Ma
+                  <sup className="pub-corresponding-mark" aria-hidden="true">
+                    †
+                  </sup>
+                </a>
               </div>
               <div className="pub-venue">
                 Proceedings of the 39th Annual ACM Symposium on User Interface Software and
@@ -207,19 +173,35 @@ export default function HomePage() {
                 Museum Exhibition Design
               </div>
               <div className="pub-authors">
-                <a href="https://wanghchen.github.io/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://wanghchen.github.io/"
+                  className="pub-author-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Huanchen Wang
                 </a>
                 , Qiuming Chen, Zhonghao Ji, <strong>Ruqi Sun</strong>,{" "}
-                <a href="https://www.cs.cityu.edu.hk/~zhichalu/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.cs.cityu.edu.hk/~zhichalu/"
+                  className="pub-author-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Zhichao Lu
                 </a>
                 ,{" "}
-                <span className="pub-corresponding">
-                  <a href="https://cse.sustech.edu.cn/faculty/~mayx/" target="_blank" rel="noreferrer">
-                    Yuxin Ma
-                  </a>
-                </span>
+                <a
+                  href="https://cse.sustech.edu.cn/faculty/~mayx/"
+                  className="pub-author-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Yuxin Ma
+                  <sup className="pub-corresponding-mark" aria-hidden="true">
+                    †
+                  </sup>
+                </a>
               </div>
               <div className="pub-venue">
                 Proceedings of the 39th Annual ACM Symposium on User Interface Software and

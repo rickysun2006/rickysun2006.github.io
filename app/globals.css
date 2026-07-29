@@ -347,6 +347,25 @@ a:hover {
   line-height: 1.55;
 }
 
+.news-expand {
+  margin-top: 0.35rem;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.84rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.15s;
+}
+
+.news-expand:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
 /* ── Education ──────────────────────────────────────── */
 .edu-list {
   list-style: none;
@@ -589,32 +608,29 @@ a:hover {
   line-height: 1.55;
 }
 
-.pub-corresponding {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.pub-authors a {
-  color: var(--text);
+.pub-corresponding-mark {
+  font-size: 0.65em;
+  color: var(--muted);
+  margin-left: 0.05em;
   text-decoration: none;
 }
 
-.pub-authors a:hover {
-  color: var(--accent);
-  opacity: 1;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.pub-corresponding a {
+.pub-author-link {
   color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--muted);
+  transition: color 0.15s, border-color 0.15s;
 }
 
-.pub-corresponding a:hover {
+.pub-author-link:hover {
   color: var(--accent);
+  border-bottom-color: var(--accent);
   opacity: 1;
+}
+
+.pub-author-link--sample {
+  cursor: default;
+  pointer-events: none;
 }
 
 .pub-venue {
