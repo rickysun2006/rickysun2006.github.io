@@ -6,6 +6,27 @@ const VISIBLE_COUNT = 3;
 
 const NEWS_ITEMS = [
   {
+    id: "somatic-city",
+    date: "Aug 2026",
+    content: (
+      <>
+        Invited by{" "}
+        <a
+          href="https://designschool.sustech.edu.cn/about/team/faculty/544.html"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Prof. Mirna Zordan
+        </a>{" "}
+        to co-organize the Somatic City Workshop in Chicago with{" "}
+        <a href="https://www.fsv-lab.com/" target="_blank" rel="noreferrer">
+          FSV Lab
+        </a>
+        .
+      </>
+    ),
+  },
+  {
     id: "uist-acceptance",
     date: "Jul 2026",
     content: (

@@ -20,7 +20,8 @@ export default function HomePage() {
       <div id="intro" className="intro">
         <div className="intro-main">
           <h1>
-            Hi, this is <span className="intro-accent">Ruqi Sun</span>.
+            Hi, this is <span className="intro-accent">Ruqi Sun</span>.{" "}
+            <span className="intro-pronouns">(he/they)</span>
           </h1>
           <p className="intro-role">Undergraduate Researcher &middot; SUSTech CSE</p>
 
@@ -97,6 +98,20 @@ export default function HomePage() {
                   LinkedIn
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://scholar.google.com/citations?user=MXMQ21gAAAAJ&hl=en"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="contact-icon" aria-hidden="true">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.75-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
+                    </svg>
+                  </span>
+                  Google Scholar
+                </a>
+              </li>
             </ul>
           </div>
         </aside>
@@ -155,7 +170,17 @@ export default function HomePage() {
                 <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
                   UIST 2026
                 </a>
-                ), 2026, conditionally accepted, to appear.
+                ), 2026.
+              </div>
+              <div className="pub-links">
+                <a
+                  href="https://arxiv.org/abs/2608.09698v1"
+                  className="pub-link-btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  arXiv
+                </a>
               </div>
             </div>
           </li>
@@ -209,7 +234,7 @@ export default function HomePage() {
                 <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
                   UIST 2026
                 </a>
-                ), 2026, conditionally accepted, to appear.
+                ), 2026.
               </div>
             </div>
           </li>
