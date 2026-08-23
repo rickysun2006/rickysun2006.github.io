@@ -26,17 +26,40 @@ export default function HomePage() {
           <p className="intro-role">Undergraduate Researcher &middot; SUSTech CSE</p>
 
           <p>
-            I&rsquo;m a second-year undergraduate in Computer Science and Engineering at
-            Southern University of Science and Technology (SUSTech), advised by{" "}
+            My name is Ruqi Sun, and you can call me Ricky. I am an undergraduate student in
+            Computer Science and Engineering at the{" "}
+            <a href="https://www.sustech.edu.cn/en/" target="_blank" rel="noreferrer">
+              Southern University of Science and Technology (SUSTech)
+            </a>
+            , where I conduct research at the DVA Lab under the supervision of{" "}
             <a href="https://cse.sustech.edu.cn/faculty/~mayx/" target="_blank" rel="noreferrer">
               Prof. Yuxin Ma
             </a>
-            . I am also working with{" "}
+            . I also work with{" "}
             <a href="https://dongyu.tech/" target="_blank" rel="noreferrer">
               Prof. Dongyu Liu
             </a>{" "}
-            at UC Davis. My research sits at the intersection of human-AI interaction and
-            visualization. You can call me Ricky.
+            at the VIA Lab,{" "}
+            <a href="https://www.ucdavis.edu/" target="_blank" rel="noreferrer">
+              UC Davis
+            </a>
+            . For my current research on agent-assisted visualization, I am jointly advised
+            by{" "}
+            <a href="https://dongyu.tech/" target="_blank" rel="noreferrer">
+              Prof. Dongyu Liu
+            </a>{" "}
+            and{" "}
+            <a href="https://cse.sustech.edu.cn/faculty/~mayx/" target="_blank" rel="noreferrer">
+              Prof. Yuxin Ma
+            </a>
+            .
+          </p>
+          <p>
+            My research focuses on Human-AI Interaction in the contexts of visualization and
+            creativity support. I am particularly interested in how AI agents shape users&rsquo;
+            understanding, agency, and decision-making in complex authoring and analytical
+            workflows. I design and study interactive systems that make AI-generated
+            decisions more visible, reviewable, and open to human revision.
           </p>
 
           <blockquote className="intro-quote">
