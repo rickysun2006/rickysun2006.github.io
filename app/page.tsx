@@ -35,7 +35,7 @@ export default function HomePage() {
             <a href="https://dongyu.tech/" target="_blank" rel="noreferrer">
               Prof. Dongyu Liu
             </a>{" "}
-            at UC Davis. My research sits at the intersection of human-centered AI and
+            at UC Davis. My research sits at the intersection of human-AI interaction and
             visualization. You can call me Ricky.
           </p>
 
@@ -47,9 +47,9 @@ export default function HomePage() {
           <div className="intro-interests">
             <p>My research interests include:</p>
             <ul className="interests-list">
-              <li><strong>Human-centered AI</strong></li>
+              <li><strong>Human-AI Interaction</strong></li>
               <li><strong>Visualization</strong></li>
-              <li><strong>AI-augmented creativity</strong></li>
+              <li><strong>Creativity Support Tools</strong></li>
             </ul>
           </div>
         </div>
@@ -235,6 +235,16 @@ export default function HomePage() {
                   UIST 2026
                 </a>
                 ), 2026.
+              </div>
+              <div className="pub-links">
+                <a
+                  href="https://arxiv.org/abs/2608.16067"
+                  className="pub-link-btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  arXiv
+                </a>
               </div>
             </div>
           </li>

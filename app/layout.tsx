@@ -5,13 +5,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://rickysun2006.github.io"),
   title: "Ruqi Sun",
   description:
-    "Undergraduate researcher at SUSTech working on human-centered AI and visualization.",
+    "Undergraduate researcher at SUSTech working on human-AI interaction and visualization.",
   keywords: [
     "Ruqi Sun",
     "Ricky Sun",
     "孙如琦",
-    "Human-centered AI",
+    "Human-AI Interaction",
     "Visualization",
+    "Creativity Support Tools",
     "SUSTech",
     "HCI",
   ],
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ruqi Sun",
     description:
-      "Undergraduate researcher at SUSTech working on human-centered AI and visualization.",
+      "Undergraduate researcher at SUSTech working on human-AI interaction and visualization.",
     url: "https://rickysun2006.github.io",
     siteName: "Ruqi Sun",
     locale: "en_US",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Ruqi Sun",
     description:
-      "Undergraduate researcher at SUSTech working on human-centered AI and visualization.",
+      "Undergraduate researcher at SUSTech working on human-AI interaction and visualization.",
   },
   icons: {
     icon: "/favicon.svg",
