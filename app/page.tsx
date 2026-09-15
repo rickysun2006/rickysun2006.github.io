@@ -12,6 +12,7 @@ export default function HomePage() {
           <a href="#news">News</a>
           <a href="#publications">Publications</a>
           <a href="#education">Education</a>
+          <a href="#writing">Writing</a>
           <a href="/cv.pdf" target="_blank" rel="noreferrer">CV ↗</a>
         </div>
       </nav>
@@ -133,6 +134,16 @@ export default function HomePage() {
                     </svg>
                   </span>
                   Google Scholar
+                </a>
+              </li>
+              <li>
+                <a href="https://medium.com/@sunruqi10" target="_blank" rel="noreferrer">
+                  <span className="contact-icon" aria-hidden="true">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M13.54 12a6.8 6.8 0 1 1-6.77-6.8 6.8 6.8 0 0 1 6.77 6.8zM16.96 12c0 1.9-1.16 3.5-2.59 3.5s-2.59-1.6-2.59-3.5 1.16-3.5 2.59-3.5 2.59 1.6 2.59 3.5zM22.54 12c0 1.55-.53 2.8-1.18 2.8s-1.18-1.25-1.18-2.8.53-2.8 1.18-2.8S22.54 10.45 22.54 12z" />
+                    </svg>
+                  </span>
+                  Medium
                 </a>
               </li>
             </ul>
@@ -342,6 +353,32 @@ export default function HomePage() {
             </div>
           </li>
         </ul>
+      </section>
+
+      {/* ── Writing ─────────────────────────────────── */}
+      <section id="writing">
+        <h2>Writing</h2>
+        <a
+          className="writing-card"
+          href="https://medium.com/@sunruqi10/i-became-disillusioned-with-hci-i-still-love-it-6e68248b070f"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="writing-thumb">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/hci-post.jpg" alt="CHI 2026 in Barcelona" />
+          </div>
+          <div className="writing-body">
+            <div className="writing-meta">Sep 2026 &nbsp;&middot;&nbsp; Medium</div>
+            <div className="writing-title">
+              I Became Disillusioned with HCI. I Still Love It.
+            </div>
+            <div className="writing-excerpt">
+              What a year of HCI research in a Chinese CS department taught me about
+              impact, prestige, and the questions I still want to ask.
+            </div>
+          </div>
+        </a>
       </section>
 
       {/* ── Footer ──────────────────────────────────── */}

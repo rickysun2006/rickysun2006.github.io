@@ -1,13 +1,20 @@
-"use client";
-
-import { useState } from "react";
-
-const VISIBLE_COUNT = 3;
-
 const NEWS_ITEMS = [
   {
+    id: "chi-2027-submit",
+    date: "2026.09",
+    content: (
+      <>
+        4 papers submitted to{" "}
+        <a href="https://chi2027.acm.org/" target="_blank" rel="noreferrer">
+          ACM CHI 2027
+        </a>
+        . Good luck to us 🤞
+      </>
+    ),
+  },
+  {
     id: "somatic-city",
-    date: "Aug 2026",
+    date: "2026.08",
     content: (
       <>
         Invited by{" "}
@@ -28,7 +35,7 @@ const NEWS_ITEMS = [
   },
   {
     id: "uist-acceptance",
-    date: "Jul 2026",
+    date: "2026.07",
     content: (
       <>
         One first-author paper and one fourth-author paper received conditional acceptance to{" "}
@@ -41,7 +48,7 @@ const NEWS_ITEMS = [
   },
   {
     id: "uc-davis-intern",
-    date: "Jul 2026",
+    date: "2026.07",
     content: (
       <>
         Started my research internship at UC Davis, working with{" "}
@@ -54,10 +61,10 @@ const NEWS_ITEMS = [
   },
   {
     id: "chi-2026",
-    date: "Apr 2026",
+    date: "2026.04",
     content: (
       <>
-        I&rsquo;ll be attending{" "}
+        Attended{" "}
         <a href="https://chi2026.acm.org/" target="_blank" rel="noreferrer">
           ACM CHI 2026
         </a>{" "}
@@ -67,7 +74,7 @@ const NEWS_ITEMS = [
   },
   {
     id: "uist-submit",
-    date: "Mar 2026",
+    date: "2026.03",
     content: (
       <>
         4 papers submitted to{" "}
@@ -81,31 +88,17 @@ const NEWS_ITEMS = [
 ];
 
 export function NewsSection() {
-  const [expanded, setExpanded] = useState(false);
-  const hasMore = NEWS_ITEMS.length > VISIBLE_COUNT;
-  const visibleItems = expanded ? NEWS_ITEMS : NEWS_ITEMS.slice(0, VISIBLE_COUNT);
-
   return (
     <section id="news">
       <h2>News</h2>
       <ul className="news-list">
-        {visibleItems.map((item) => (
+        {NEWS_ITEMS.map((item) => (
           <li key={item.id} className="news-item">
             <span className="news-date">{item.date}</span>
             <div className="news-content">{item.content}</div>
           </li>
         ))}
       </ul>
-      {hasMore && (
-        <button
-          type="button"
-          className="news-expand"
-          onClick={() => setExpanded((prev) => !prev)}
-          aria-expanded={expanded}
-        >
-          {expanded ? "Show less" : "Expand"}
-        </button>
-      )}
     </section>
   );
 }
