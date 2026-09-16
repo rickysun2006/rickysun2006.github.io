@@ -27,7 +27,8 @@ export default function HomePage() {
           <p className="intro-role">Undergraduate Researcher &middot; SUSTech CSE</p>
 
           <p>
-            My name is Ruqi Sun, and you can call me Ricky. I am an undergraduate student in
+            My name is Ruqi Sun, and you can call me Ricky. I am a third-year undergraduate
+            student in
             Computer Science and Engineering at the{" "}
             <a href="https://www.sustech.edu.cn/en/" target="_blank" rel="noreferrer">
               Southern University of Science and Technology (SUSTech)
@@ -44,15 +45,6 @@ export default function HomePage() {
             <a href="https://www.ucdavis.edu/" target="_blank" rel="noreferrer">
               UC Davis
             </a>
-            . For my current research on agent-assisted visualization, I am jointly advised
-            by{" "}
-            <a href="https://dongyu.tech/" target="_blank" rel="noreferrer">
-              Prof. Dongyu Liu
-            </a>{" "}
-            and{" "}
-            <a href="https://cse.sustech.edu.cn/faculty/~mayx/" target="_blank" rel="noreferrer">
-              Prof. Yuxin Ma
-            </a>
             .
           </p>
           <p>
@@ -63,17 +55,12 @@ export default function HomePage() {
             decisions more visible, reviewable, and open to human revision.
           </p>
 
-          <blockquote className="intro-quote">
-            I build AI that does more than produce answers: it gives people the power to
-            understand, challenge, and change how those answers are made.
-          </blockquote>
-
           <div className="intro-interests">
             <p>My research interests include:</p>
             <ul className="interests-list">
-              <li><strong>Human-AI Interaction</strong></li>
-              <li><strong>Visualization</strong></li>
-              <li><strong>Creativity Support Tools</strong></li>
+              <li>Human-AI Interaction</li>
+              <li>Visualization</li>
+              <li>Creativity Support Tools</li>
             </ul>
           </div>
         </div>
