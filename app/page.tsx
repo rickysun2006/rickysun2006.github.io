@@ -68,7 +68,7 @@ export default function HomePage() {
         <aside className="intro-sidebar">
           <div className="intro-photo">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/ruqisun.png" alt="Ruqi Sun" />
+            <img src="/ruqisun.jpg" alt="Ruqi Sun" />
           </div>
 
           <div className="contact-block">
