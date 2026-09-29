@@ -282,6 +282,22 @@ a:hover {
   margin-top: 1.25rem;
 }
 
+.seeking-note {
+  margin: 1.15rem 0 0;
+  padding: 0.7rem 0.85rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--accent-soft);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.seeking-note strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .intro-interests > p {
   margin-bottom: 0.55rem;
   font-size: 0.9rem;

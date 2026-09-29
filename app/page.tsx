@@ -55,6 +55,14 @@ export default function HomePage() {
             decisions more visible, reviewable, and open to human revision.
           </p>
 
+          <p className="seeking-note">
+            I am currently seeking research collaborations, research internship
+            opportunities, and{" "}
+            <strong>Ph.D. opportunities for Fall 2028</strong>. Please feel free
+            to <a href="mailto:sunrq2024@mail.sustech.edu.cn">reach out</a> if
+            you are interested in working together.
+          </p>
+
           <div className="intro-interests">
             <p>My research interests include:</p>
             <ul className="interests-list">
@@ -131,6 +139,20 @@ export default function HomePage() {
                     </svg>
                   </span>
                   Medium
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.xiaohongshu.com/user/profile/5bdecb1011be100a4cb79b43"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="contact-icon" aria-hidden="true">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M6.5 3h9.2A2.3 2.3 0 0 1 18 5.3V19a2 2 0 0 1-2 2H7.2A2.2 2.2 0 0 1 5 18.8V5.2A2.2 2.2 0 0 1 7.2 3H6.5zm1.3 4.2h6.4v1.5H7.8V7.2zm0 3.2h6.4V12H7.8v-1.6zm0 3.2h4.2v1.5H7.8v-1.5z" />
+                    </svg>
+                  </span>
+                  RedNote
                 </a>
               </li>
             </ul>
