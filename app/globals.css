@@ -199,6 +199,11 @@ a:hover {
   transform: scaleX(1);
 }
 
+.site-nav .nav-links a.nav-page {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 /* ── Intro (two-column: main + sidebar) ─────────────── */
 .intro {
   display: grid;
