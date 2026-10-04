@@ -949,6 +949,10 @@ a:hover {
   object-position: center top;
 }
 
+.misc-grid--four.misc-grid--portrait .misc-figure img {
+  object-position: center;
+}
+
 .misc-grid--wide .misc-figure img {
   aspect-ratio: 3 / 2;
   object-position: center;

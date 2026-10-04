@@ -157,6 +157,28 @@ export default function MiscPage() {
           walk, the sound of a city, or an unplanned afternoon that somehow
           stays with me.
         </p>
+        <div className="misc-grid misc-grid--four misc-grid--portrait">
+          <Photo
+            src="/misc/tokyo.jpg"
+            alt="Standing on a pedestrian bridge with Tokyo Tower behind"
+            caption="Tokyo Tower, Tokyo, Japan."
+          />
+          <Photo
+            src="/misc/fuji.jpg"
+            alt="Taking a photo with Mount Fuji in the background"
+            caption="Mount Fuji, Japan."
+          />
+          <Photo
+            src="/misc/golden-gate.jpg"
+            alt="Standing in front of the Golden Gate Bridge"
+            caption="Golden Gate Bridge, San Francisco, United States."
+          />
+          <Photo
+            src="/misc/london.jpg"
+            alt="Standing by the fountain in front of the National Gallery in London"
+            caption="Trafalgar Square, London, United Kingdom."
+          />
+        </div>
       </section>
 
       <section id="books" className="misc-section">
