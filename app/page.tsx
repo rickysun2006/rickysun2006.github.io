@@ -1,21 +1,12 @@
 import { NewsSection } from "./news-section";
+import { SiteNav } from "./site-nav";
 
 export default function HomePage() {
   return (
     <div className="page-wrap">
 
       {/* ── Nav ─────────────────────────────────────── */}
-      <nav className="site-nav">
-        <a href="/" className="nav-name">Ruqi Sun</a>
-        <div className="nav-links">
-          <a href="#intro">Intro</a>
-          <a href="#news">News</a>
-          <a href="#publications">Publications</a>
-          <a href="#education">Education</a>
-          <a href="#writing">Writing</a>
-          <a href="/cv.pdf" target="_blank" rel="noreferrer">CV ↗</a>
-        </div>
-      </nav>
+      <SiteNav home />
 
       {/* ── Intro ───────────────────────────────────── */}
       <div id="intro" className="intro">

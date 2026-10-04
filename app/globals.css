@@ -894,6 +894,101 @@ a:hover {
   text-align: center;
 }
 
+/* ── Misc ──────────────────────────────────────────── */
+.misc-header h1 {
+  margin: 0.4rem 0 0.7rem;
+}
+
+.misc-section {
+  scroll-margin-top: 1.5rem;
+}
+
+.misc-grid {
+  display: grid;
+  align-items: start;
+  gap: 0.85rem;
+  margin: 1.15rem 0 1.35rem;
+}
+
+.misc-grid--two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.misc-grid--three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.misc-grid--four {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.misc-figure {
+  margin: 1.15rem 0 1.35rem;
+}
+
+.misc-grid .misc-figure {
+  margin: 0;
+}
+
+.misc-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background: #f3f3f0;
+}
+
+.misc-grid .misc-figure img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+}
+
+.misc-grid--portrait .misc-figure img {
+  aspect-ratio: 3 / 4;
+  object-position: center top;
+}
+
+.misc-grid--wide .misc-figure img {
+  aspect-ratio: 3 / 2;
+  object-position: center;
+}
+
+.misc-grid--covers .misc-figure img {
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+}
+
+.misc-figure figcaption {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.misc-quote {
+  margin: 0.85rem 0 0.2rem;
+  padding: 0;
+}
+
+.misc-quote p {
+  margin: 0;
+  max-width: none;
+  font-family: "Source Serif 4", Georgia, Cambria, serif;
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.misc-quote-en {
+  margin-top: 0.45rem !important;
+  color: var(--muted);
+  font-family: "Inter", sans-serif !important;
+  font-size: 0.88rem !important;
+  font-style: italic;
+}
+
 /* ── Mobile ─────────────────────────────────────────── */
 @media (max-width: 680px) {
   .site-nav {
@@ -905,6 +1000,15 @@ a:hover {
   .site-nav .nav-links {
     justify-content: flex-start;
     gap: 0.5rem 1rem;
+  }
+
+  .misc-grid--two,
+  .misc-grid--three {
+    grid-template-columns: 1fr;
+  }
+
+  .misc-grid--four {
+    grid-template-columns: 1fr 1fr;
   }
 
   .intro {
