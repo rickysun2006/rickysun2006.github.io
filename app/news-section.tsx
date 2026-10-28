@@ -1,5 +1,19 @@
 const NEWS_ITEMS = [
   {
+    id: "uist-2026-detroit",
+    date: "2026.10",
+    content: (
+      <>
+        I’ll be at{" "}
+        <a href="https://uist.acm.org/2026/" target="_blank" rel="noreferrer">
+          UIST 2026
+        </a>{" "}
+        in Detroit, presenting two papers: VeriForge and SiMUSation. If you’re
+        there too, come say hi! I’d love to chat.
+      </>
+    ),
+  },
+  {
     id: "chi-2027-submit",
     date: "2026.09",
     content: (
